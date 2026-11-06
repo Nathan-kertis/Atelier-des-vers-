@@ -1,0 +1,23 @@
+# L’Atelier des Vers — paquet PWA + Android
+
+## Contenu
+- `www/` : application web, icônes, manifeste PWA et cache hors ligne.
+- `package.json` et `capacitor.config.json` : configuration de départ pour Capacitor/Android.
+
+## Tester la PWA
+Une PWA doit être publiée sur un hébergement HTTPS (ou testée sur localhost).
+Après publication, ouvrez l’adresse dans Chrome Android, puis choisissez « Installer l’application » ou « Ajouter à l’écran d’accueil ».
+
+## Préparer l’application Android (APK)
+Prérequis : ordinateur avec Node.js et Android Studio installés.
+Dans ce dossier :
+1. `npm install`
+2. `npm install @capacitor/android`
+3. `npx cap add android`
+4. `npx cap sync android`
+5. `npx cap open android`
+Dans Android Studio : Build > Build Bundle(s) / APK(s) > Build APK(s).
+
+## À savoir
+Ce paquet contient les fichiers sources prêts à être publiés/emballés. Il ne contient pas encore un APK signé ni une publication sur Google Play.
+Les poèmes et la progression restent enregistrés localement dans le navigateur/appareil, comme dans le prototype actuel.

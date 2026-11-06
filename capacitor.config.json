@@ -1,0 +1,6 @@
+{
+  "appId": "com.atelierdesvers.app",
+  "appName": "L’Atelier des Vers",
+  "webDir": "www",
+  "bundledWebRuntime": false
+}
